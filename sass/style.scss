@@ -540,7 +540,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			left: 0;
 			text-transform: uppercase;
 			font-size: 208px;
-			color: #F8F8F8;
+			color: #f0f0f0;
 			font-weight: 900;
 			z-index: -1;
 		}
@@ -557,7 +557,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			left: 0;
 			text-transform: uppercase;
 			font-size: 208px;
-			color: #F8F8F8;
+			color: #f0f0f0;
 			font-weight: 900;
 			z-index: -1;
 			line-height: 1;
@@ -587,6 +587,42 @@ h1, h2, h3, h4, h5, h6, figure {
 		}
 	}
 }
+.subtle-text2 {
+	position: absolute;
+	bottom: -1.6em;
+	left: 0;
+	text-transform: uppercase;
+	font-size: 208px;
+	color: #f0f0f0;
+	font-weight: 900;
+	z-index: -1;
+	line-height: 1;
+	span {
+		display: block;
+	}
+}
+
+#gtco-our-team {
+	.heading {
+		position: relative;
+		.subtle-text {
+			position: absolute;
+			bottom: -1.6em;
+			left: 0;
+			text-transform: uppercase;
+			font-size: 226px;
+			color: #f0f0f0;
+			font-weight: 900;
+			z-index: -1;
+			line-height: 1;
+			span {
+				display: block;
+			}
+		}
+	}
+}
+	
+	
 #gtco-our-team {
 	.heading {
 		position: relative;
@@ -596,7 +632,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			left: 0;
 			text-transform: uppercase;
 			font-size: 208px;
-			color: #F8F8F8;
+			color: #f0f0f0;
 			font-weight: 900;
 			z-index: -1;
 			line-height: 1;
@@ -648,7 +684,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			left: 0;
 			text-transform: uppercase;
 			font-size: 208px;
-			color: #F8F8F8;
+			color: #f0f0f0;
 			font-weight: 900;
 			z-index: -1;
 			line-height: 1;
