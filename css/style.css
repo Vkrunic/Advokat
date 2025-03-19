@@ -388,7 +388,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 @media screen and (max-width: 768px) {
   .gtco-cover {
-    height: 600px;
+    height: 700px;
   }
 }
 
@@ -644,7 +644,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 @media screen and (max-width: 768px) {
   .heading h1 {
-    font-size: 16px;
+    font-size: 22px;
   }
 }
 
@@ -1438,7 +1438,7 @@ html {
   color: #555;
 }
 
-.row {
+.row-flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1474,7 +1474,7 @@ html {
   display: inline-block; padding: 0px 15px; background: gray; color: white; border: 2px solid gray; border-radius: 5px; text-decoration: none; font-size: 20px;
 }
 .practice-container{
-  display: flex; align-items: flex-end;
+  display: flex; align-items: center;
 }
 .logo{
   width:60px;
