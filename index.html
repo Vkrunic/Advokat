@@ -30,14 +30,14 @@
 			<div class="container">
 				<div class="row" style="display: flex;align-items: center;">
 					<div class="col-sm-2 col-xs-12">
-						<div id="gtco-logo" style=" display:flex; flex-direction: row; align-items: center;"><a href="index.html"><img style='width:60px;' src="images/logo-advokat.png"
+						<div id="gtco-logo" style=" display:flex; flex-direction: row; align-items: center;"><a href="index.html"><img class="logo" src="images/logo-advokat.png"
 									alt="" /></a><div style="font-size: 15px; color: white; display: flex; flex-direction: column; font-family:'Mulish'; font-weight: 100"><span >Ivan Vasic</span><span>Advokat</span></div></div>
 					</div>
 					<div class="col-xs-10 text-right menu-1 main-nav " >
 						<ul>
 							<li class="active"><a href="#" data-nav-section="home">Početna</a></li>
-							<li><a href="#" data-nav-section="our-team">O meni</a></li>
 							<li><a href="#" data-nav-section="practice-areas">Oblasti prakse</a></li>
+							<li><a href="#" data-nav-section="contact">Kontakt</a></li>
 							<li class="phone"><img src="/images/call-icon.svg"/><a href="tel://1235235598">(+387) 65 635 196</a></li>
 						</ul>
 					</div>
@@ -46,8 +46,7 @@
 		</nav>
 
 
-		<section id="gtco-hero" class="gtco-cover" style="background-image: url(images/image.png); background-size: cover; background-position: left;"
-			data-section="home" data-stellar-background-ratio="0.5">
+		<section  class="gtco-cover"	data-section="home" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
@@ -55,12 +54,12 @@
 						<div class="display-t">
 							<div class="display-tc">
 								<div class="landing-text">
-									<p style='line-height: 61px; font-size: 32px; text-align: start; width: 60%; color:white;'>
+									<p class="landing-p">
 										<span class="landing-span">Iskusni Advokat</span> sa širokim spektrom ekspertize, pružam 
 										<span class="landing-span">Sveobuhvatne Pravne Usluge</span> privrednim društvima, preduzetnicima i fizičkim licima!
 									</p>
 									
-									<ul style='text-align: start; font-family: Playfair; font-size: 24px; color:white; list-style: none; padding-left: 0;'>
+									<ul class="landing-ul">
 										<li>Zastupanje pred sudovima</li>
 										<li>Izrada svih vrsta ugovora za firme</li>
 										<li>Podrška stranim klijentima</li>
@@ -69,51 +68,19 @@
 									<div class="main-nav">
 										<ul style="padding-left: 0;padding-top:30px;">
 											<li class="btn-cta" style="display: inline-block;">
-												<a href="#" data-nav-section="contact" style=" display: inline-block; padding: 0px 15px; background: gray; color: white; border: 2px solid gray; border-radius: 5px; text-decoration: none; font-size: 20px;">
+												<a href="#" data-nav-section="contact" class="contact-button">
 													<span>Kontakt</span>
 												</a>
 											</li>
 										</ul>
 									</div>
-									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-
-		<!-- <section id="gtco-our-team" data-section="our-team">
-			<div class="container">
-				<div class="row row-pb-md">
-					<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
-						<h1>Advokat kome možete
-							verovati</h1>
-					</div>
-				</div>
-				<div class="row team-item gtco-team-reverse">
-					<div class="col-md-6 col-md-push-7 animate-box" data-animate-effect="fadeInRight">
-						<div class="img-shadow" style="border-radius: 4px;">
-							<img src="images/img_team_1.jpg" class="img-responsive"
-								alt="Besplatan HTML5 Bootstrap šablon od FreeHTML5.co">
-						</div>
-					</div>
-					<div class="col-md-6 col-md-pull-6 animate-box" data-animate-effect="fadeInRight">
-						<h1>Ivan Vasilić</h1>
-						<p style="font-size: 18px;">Kao iskusni advokat sa širokim spektrom ekspertize,
-							pružam sveobuhvatne pravne usluge privrednim društvima, preduzetnicima i
-							fizičkim licima. Moj cilj je da vam omogućim pravnu sigurnost i kvalitetnu pravnu podršku,
-							bilo da je u pitanju razvoj i vođenje vašeg biznisa, upravljanje imovinom ili zaštita vaših
-							prava, kako biste se vi mogli koncentrisati na ono što najbolje radite!</p>
-					</div>
-					<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
-						<p class="subtle-text animate-box" data-animate-effect="fadeIn">ADVOKAT</p>
-					</div>
-
-				</div>
-			</div>
-		</section> -->
-
 
 		<section class="practice-areas" id="gtco-practice-areas" data-section="practice-areas">
 			<div class="container">
@@ -126,7 +93,7 @@
 				</div>
 		
 				<div class="row" >
-					<div class="col-md-6" style="display: flex; align-items: flex-end;">
+					<div class="col-md-6 practice-container">
 						<div class="practice-card">
 							<div class="card-icon">
 								<img src="images/scale.png" alt="Pravna Ikona">
@@ -168,7 +135,7 @@
 						</div>
 					</div>
 		
-					<div class="col-md-6" style="display: flex; align-items: flex-start;">
+					<div class="col-md-6 practice-container">
 						<div class="practice-card">
 							<div class="card-icon">
 								<img src="images/scale.png" alt="Pravna Ikona">
@@ -294,7 +261,7 @@
 			<div class="container">
 
 				<div class="row copyright">
-					<div class="col-md-12">
+					<div class="col-md-12 footer-responsive">
 						<p class="pull-left">
 							<small class="block">&copy; 2025. All Rights Reserved.</small>
 						</p>

@@ -42,7 +42,7 @@ body {
 }
 
 a {
-  color: #b1b1b1;
+  color: #707070;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -358,10 +358,13 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+  background-image: url("../images/image.png");
+  background-size: cover; 
+  background-position: left;
 }
 
 .gtco-cover a {
-  color: #2676a9;
+  color: #dadada;
 }
 
 .gtco-cover a:hover {
@@ -771,7 +774,9 @@ h1, h2, h3, h4, h5, h6, figure {
 form label {
   font-weight: normal !important;
 }
-
+.gtco-contact-info ul li {
+  color: #555;
+}
 #gtco-header .display-tc,
 .gtco-cover .display-tc {
   display: table-cell !important;
@@ -1021,7 +1026,7 @@ form label {
 }
 
 .gtco-nav-toggle.active i::before, .gtco-nav-toggle.active i::after {
-  background: #444;
+  background: #8a8a8a;
 }
 
 .gtco-nav-toggle:hover, .gtco-nav-toggle:focus, .gtco-nav-toggle:active {
@@ -1038,7 +1043,7 @@ form label {
   font: bold 14px/.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
-  background: #252525;
+  background: #a3a3a3;
   -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
 }
@@ -1047,7 +1052,7 @@ form label {
   content: '';
   width: 25px;
   height: 2px;
-  background: #252525;
+  background: #a3a3a3;
   position: absolute;
   left: 0;
   -webkit-transition: all .2s ease-out;
@@ -1436,6 +1441,7 @@ html {
 .row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .col-md-6 {
@@ -1458,3 +1464,57 @@ html {
 .contact{
  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+.landing-p{
+  line-height: 61px; font-size: 32px; text-align: start; width: 60%; color:white;
+}
+.landing-ul{
+  text-align: start; font-family: Playfair; font-size: 24px; color:white; list-style: none; padding-left: 0;
+}
+.contact-button{
+  display: inline-block; padding: 0px 15px; background: gray; color: white; border: 2px solid gray; border-radius: 5px; text-decoration: none; font-size: 20px;
+}
+.practice-container{
+  display: flex; align-items: flex-end;
+}
+.logo{
+  width:60px;
+}
+
+@media screen and (max-width: 768px) {
+  .gtco-nav-toggle {
+    display: block;
+  }
+.landing-p{
+  font-size: 21px;
+  line-height: 33px;
+}
+.landing-ul{
+  font-size: 17px;
+}
+.landing-span{
+  font-size: 26px;
+}
+.gtco-cover{
+  background-position: right;
+}
+.landing-p{
+  width: 100%;
+}
+.phone{
+  margin-top: 20px !important;
+}
+.practice-container{
+  align-items: center;
+}
+.logo{
+  width: 40px;
+}
+.footer-responsive{
+  display: flex;
+  flex-direction: row;
+}
+.block{
+  font-size: 12px;
+}
+}
+
