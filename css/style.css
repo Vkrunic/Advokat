@@ -1495,7 +1495,7 @@ html {
   font-size: 26px;
 }
 .gtco-cover{
-  background-position: right;
+  background-position: left !important;
 }
 .landing-p{
   width: 100%;
