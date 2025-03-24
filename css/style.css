@@ -1370,7 +1370,7 @@ form label {
 .landing-span{
   font-family: 'Playfair';
   font-style: italic;
-  font-size: 42px; text-align: start; width: 60%; padding-bottom: 10%; color:white;
+  font-size: 60px; text-align: start; width: 60%; padding-bottom: 10%; color:white;
 }
 
 /* Scrollbar for WebKit browsers (Chrome, Safari) */
@@ -1405,12 +1405,13 @@ html {
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: top;
   justify-content: space-between;
-  height: 100%;
+  height: 300px;
   width: 90%; /* Reduce width of the cards */
   max-width: 370px; /* Ensures cards are not too wide */
   transition: transform 0.3s ease-in-out;
+  gap: 20px;
 }
 
 .practice-card:hover {
@@ -1465,7 +1466,10 @@ html {
  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 .landing-p{
-  line-height: 61px; font-size: 32px; text-align: start; width: 60%; color:white;
+  line-height: 72px; font-size: 48px; text-align: start; width: 60%; color:white;
+}
+.landing-p2{
+  line-height: 42px; font-size: 22px; text-align: start; width: 60%; color:white;
 }
 .landing-ul{
   text-align: start; font-family: Playfair; font-size: 24px; color:white; list-style: none; padding-left: 0;
@@ -1479,26 +1483,37 @@ html {
 .logo{
   width:60px;
 }
+.practice-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 20px;
+}
+
 
 @media screen and (max-width: 768px) {
   .gtco-nav-toggle {
     display: block;
   }
-.landing-p{
-  font-size: 21px;
-  line-height: 33px;
-}
 .landing-ul{
   font-size: 17px;
 }
 .landing-span{
-  font-size: 26px;
+  font-size: 30px;
 }
 .gtco-cover{
   background-position: left !important;
 }
 .landing-p{
   width: 100%;
+  font-size: 28px;
+  line-height: 33px;
+  margin-top: 30px;
+}
+.landing-p2{
+  width: 100%;
+  font-size: 18px;
+  line-height: 33px;
 }
 .phone{
   margin-top: 20px !important;
@@ -1513,9 +1528,31 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap:20px;
 }
 .block{
   font-size: 12px;
 }
+.gtco-nav #gtco-logo a {
+  padding: 0px 10px 0px 0px
+}
 }
 
+@media (max-width: 1200px) {
+  .practice-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .practice-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .practice-grid {
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+  }
+}
