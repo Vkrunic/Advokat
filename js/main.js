@@ -81,48 +81,37 @@
 
 
 	var offcanvasMenu = function() {
-
 		$('body').prepend('<div id="gtco-offcanvas" />');
 		$('body').prepend('<a href="#" class="js-gtco-nav-toggle gtco-nav-toggle"><i></i></a>');
-		var clone1 = $('.menu-1 > ul').clone();
-		$('#gtco-offcanvas').append(clone1);
-		var clone2 = $('.menu-2 > ul').clone();
-		$('#gtco-offcanvas').append(clone2);
-
+	
+		var clone1 = $('.menu-1 .main-nav ul').clone(); // Clone navigation menu
+		var clone2 = $('.menu-1 > ul').clone(); // Clone phone and LinkedIn
+		var clone3 = $('.menu-2 ul').clone(); // Clone second menu
+	
+		$('#gtco-offcanvas').append(clone1); 
+		$('#gtco-offcanvas').append(clone2); 
+		$('#gtco-offcanvas').append(clone3); 
+	
 		$('#gtco-offcanvas .has-dropdown').addClass('offcanvas-has-dropdown');
-		$('#gtco-offcanvas')
-			.find('li')
-			.removeClass('has-dropdown');
-
+		$('#gtco-offcanvas').find('li').removeClass('has-dropdown');
+	
 		// Hover dropdown menu on mobile
-		$('.offcanvas-has-dropdown').mouseenter(function(){
+		$('.offcanvas-has-dropdown').mouseenter(function() {
 			var $this = $(this);
-
-			$this
-				.addClass('active')
-				.find('ul')
-				.slideDown(500, 'easeOutExpo');				
-		}).mouseleave(function(){
-
+			$this.addClass('active').find('ul').slideDown(500, 'easeOutExpo');				
+		}).mouseleave(function() {
 			var $this = $(this);
-			$this
-				.removeClass('active')
-				.find('ul')
-				.slideUp(500, 'easeOutExpo');				
+			$this.removeClass('active').find('ul').slideUp(500, 'easeOutExpo');				
 		});
-
-
-		$(window).resize(function(){
-
-			if ( $('body').hasClass('offcanvas') ) {
-
-    			$('body').removeClass('offcanvas');
-    			$('.js-gtco-nav-toggle').removeClass('active');
-				
-	    	}
+	
+		$(window).resize(function() {
+			if ($('body').hasClass('offcanvas')) {
+				$('body').removeClass('offcanvas');
+				$('.js-gtco-nav-toggle').removeClass('active');
+			}
 		});
 	};
-
+	
 
 	// Reflect scrolling in navigation
 	var navActive = function(section) {
