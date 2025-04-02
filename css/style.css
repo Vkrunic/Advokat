@@ -1405,8 +1405,7 @@ html {
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: top;
-  justify-content: space-between;
+  justify-content: start;
   height: 300px;
   width: 90%; /* Reduce width of the cards */
   max-width: 370px; /* Ensures cards are not too wide */
@@ -1502,17 +1501,18 @@ html {
   font-size: 30px;
 }
 .gtco-cover{
-  background-position: left !important;
+  background-position: right !important;
+  background-image: url(../images/img-responsive.png);
 }
 .landing-p{
   width: 100%;
   font-size: 28px;
   line-height: 33px;
-  margin-top: 30px;
+  margin-top: -20px;
 }
 .landing-p2{
   width: 100%;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 33px;
 }
 .phone{
