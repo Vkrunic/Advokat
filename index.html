@@ -139,7 +139,9 @@
 				</div>
 				<div class="row">
 					<div class="col-md-6 col-md-push-6 animate-box">
-						<form id="contactForm">
+
+						<form action="https://api.web3forms.com/submit" method="POST">
+							<input type="hidden" name="access_key" value="2fd07c00-1a4d-4ca4-ac48-fe2525aca067">
 							<div class="form-group">
 								<label for="name" class="sr-only">Ime</label>
 								<input type="text" class="form-control" placeholder="Ime" id="name" required>
@@ -152,11 +154,14 @@
 								<label for="message" class="sr-only">Poruka</label>
 								<textarea name="message" id="message" class="form-control" cols="30" rows="7" placeholder="Poruka" required></textarea>
 							</div>
+							<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 							<div class="form-group">
 								<button type="submit" class="btn">Pošaljite poruku</button>
 							</div>
 						</form>
+
 					</div>
+
 					<div class="col-md-6 col-md-pull-6 animate-box">
 						<div class="gtco-contact-info">
 							<ul>
