@@ -1480,7 +1480,7 @@ html {
   display: flex; align-items: center;
 }
 .logo{
-  width:60px;
+  width: 142px;
 }
 .practice-grid {
   display: grid;
@@ -1524,9 +1524,7 @@ html {
 .practice-container{
   align-items: center;
 }
-.logo{
-  width: 40px;
-}
+
 .footer-responsive{
   display: flex;
   flex-direction: row;
