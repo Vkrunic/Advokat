@@ -468,7 +468,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #gtco-practice-areas,
 #gtco-our-team,
 #gtco-contact {
-  padding: 7em 0;
+  padding: 5em 0;
   clear: both;
 }
 
@@ -1480,7 +1480,13 @@ html {
   display: flex; align-items: center;
 }
 .logo{
-  width: 142px;
+  width: 190px;
+}
+.contact-responsive{
+  display: none;
+}
+.contact-desktop{
+  display: block;
 }
 .practice-grid {
   display: grid;
@@ -1493,7 +1499,57 @@ html {
   display: flex;
   justify-content: flex-end;
 }
+
+/* Default hidden */
+.mobile-phone {
+	display: none;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.mobile-phone a {
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.mobile-phone img {
+	width: 18px;
+	height: auto;
+}
+
+/* Show only on mobile */
+@media (max-width: 768px) {
+	.mobile-phone {
+		display: block;
+	}
+
+	/* Hide phone number from nav on mobile */
+	.menu-1 li:nth-child(2) {
+		display: none;
+	}
+}
+
+
+
+
 @media screen and (max-width: 768px) {
+  .row-pb-md {
+      padding-bottom: 15px !important;
+  }
+  .contact-desktop{
+    display: none;
+  }
+  .contact-responsive{
+    display: block;
+  }
+
+  .logo{
+    width: 140px;
+  }
   .gtco-nav-toggle {
     display: block;
   }
