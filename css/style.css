@@ -921,6 +921,7 @@ form label {
 
 #gtco-offcanvas a {
   color: rgba(255, 255, 255, 0.5);
+  font-size: 24px;
 }
 
 #gtco-offcanvas a:hover {
@@ -1557,7 +1558,7 @@ html {
   font-size: 17px;
 }
 .landing-span{
-  font-size: 30px;
+  font-size: 25px;
 }
 .gtco-cover{
   background-position: right !important;
@@ -1565,9 +1566,9 @@ html {
 }
 .landing-p{
   width: 100%;
-  font-size: 28px;
-  line-height: 33px;
-  margin-top: -20px;
+  font-size: 24px;
+  line-height: 27px;
+  margin-top: 35px;
 }
 .landing-p2{
   width: 100%;
@@ -1576,6 +1577,9 @@ html {
 }
 .phone{
   margin-top: 20px !important;
+}
+.responsive-phone{
+  display: none;
 }
 .practice-container{
   align-items: center;
